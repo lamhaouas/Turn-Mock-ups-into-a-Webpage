@@ -1,0 +1,239 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+header p {
+    margin-top: 1px;
+}
+
+/* Navigation bar */
+nav {
+    grid-area: nav;
+}
+
+nav img {
+    width: 150px;
+    height: 70px;
+    padding: 15px 0px;
+}
+
+nav ul {
+    float: right;
+    display: inline-flex;
+    margin-top: 30px;
+}
+
+nav ul li {
+    list-style-type: none;
+    padding: 10px 35px;
+    font-weight: 500;
+
+}
+
+a {
+    text-decoration: none;
+    color: #1e90ff;
+}
+
+/* search bar  */
+form i {
+    border: none;
+    padding: 17px;
+    background-color: #F2F2F2;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    position: absolute;
+}
+
+.search {
+    border: 2px solid #f2f2f2;
+    width: 150px;
+    height: 45px;
+    padding: 0px 2px;
+    position: relative;
+    right: -45px;
+
+}
+
+form input::placeholder {
+    color: black;
+    font-weight: bold;
+    font-family: 'Raleway';
+    padding-left: 5px;
+
+}
+
+.searchButton {
+    background-color: #0065FC;
+    color: white;
+    border: none;
+    padding: 17px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: relative;
+    right: -35px;
+
+}
+
+/* Filters */
+.filters {
+    display: flex;
+    flex-flow: row;
+
+}
+
+.filters h3 {
+    margin: 20px 20px 20px 0;
+    padding: 10px
+}
+
+.filter-button {
+    margin: 20px;
+    border-radius: 20px;
+    border: 2px solid #f2f2f2;
+    background-color: white;
+    font-weight: bold;
+    height: 45px;
+    position: relative;
+    width: 150px;
+    transition-property: width;
+
+}
+
+.filter-button i {
+    color: #0065fc;
+    background-color: #deebff;
+    padding: 15px;
+    border-radius: 50px;
+    position: absolute;
+    left: -10px;
+    top: -2px;
+}
+
+.filter-button:hover {
+    background-color: #1e90ff;
+    width: 180px;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.info i {
+    background-color: white;
+    color: #0065fc;
+    border: #f2f2f2 solid 2px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+
+}
+
+.info p {
+    margin: 25px 25px 25px 0px;
+}
+
+/* Accommodations in marseille */
+
+.accommodations {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #ececec;
+    border-radius: 20px;
+    padding: 30px;
+    width: 70%;
+}
+
+.accommodation-figs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.accommodation-card {
+
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 #c0c0c0;
+    padding: 20px;
+    width: 400px;
+    height: 250px;
+}
+
+.accommodation-card img {
+    width: 100%;
+    height: 60%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+}
+
+figcaption i {
+    color: #0065fc;
+}
+
+/* The side */
+.most-popular {
+    display: flex;
+    flex-direction: column;
+    background-color: #ececec;
+    width: 30%;
+}
+
+.most-cards {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.most-card {
+    display: flex;
+    box-shadow: 0 4px 8px 0 #c0c0c0;
+    border-radius: 20px;
+    background-color: white;
+}
+.most-card img{
+    width: 40%;
+    height: 100%;
+    margin: 10px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+/* Activities in Marseille */
+.activities-marseille{
+    display: grid;
+    grid-template-columns: repeat(4,30%);
+}
+/* Footer */
+.footer {
+    background-color: #ececec;
+    padding: 15px;
+    display: flex;
+    margin-top: 35px;
+}
+
+.ft-1 {
+    padding: 20px;
+    margin-right: 150px;
+}
+
+.ft-2 {
+    padding: 20px;
+    margin: 0 100px;
+}
+
+.ft-3 {
+    padding: 20px;
+    margin-left: 150px;
+}
