@@ -1,5 +1,6 @@
 body {
     font-family: 'Raleway', sans-serif;
+
 }
 
 h1 {
@@ -10,10 +11,12 @@ h1 {
 header p {
     margin-top: 1px;
 }
-
+a {
+    text-decoration: none;
+}
 /* Navigation bar */
 nav {
-    grid-area: nav;
+    grid-area: 1;
 }
 
 nav img {
@@ -35,8 +38,7 @@ nav ul li {
 
 }
 
-a {
-    text-decoration: none;
+li a {
     color: #1e90ff;
 }
 
@@ -122,7 +124,8 @@ form input::placeholder {
 
 .info {
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    gap: 5px;
 
 }
 
@@ -130,9 +133,8 @@ form input::placeholder {
     background-color: white;
     color: #0065fc;
     border: #f2f2f2 solid 2px;
-    width: 25px;
-    height: 25px;
     border-radius: 50%;
+    padding: 5px 10px;
 
 }
 
@@ -143,13 +145,14 @@ form input::placeholder {
 /* Accommodations in marseille */
 
 .accommodations {
+    grid-area: 3;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     background-color: #ececec;
     border-radius: 20px;
     padding: 30px;
-    width: 70%;
+
 }
 
 .accommodation-figs {
@@ -167,8 +170,9 @@ form input::placeholder {
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 #c0c0c0;
     padding: 20px;
-    width: 400px;
+    width: 300px;
     height: 250px;
+    margin: 20px;
 }
 
 .accommodation-card img {
@@ -194,7 +198,7 @@ figcaption i {
 .most-cards {
     display: flex;
     flex-direction: column;
-    
+
 }
 
 .most-card {
@@ -203,18 +207,87 @@ figcaption i {
     border-radius: 20px;
     background-color: white;
 }
-.most-card img{
+
+.most-card img {
     width: 40%;
     height: 100%;
     margin: 10px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
+
 /* Activities in Marseille */
-.activities-marseille{
+.activities-cards {
     display: grid;
-    grid-template-columns: repeat(4,30%);
+    grid-template-columns: repeat(4, 23%);
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 25px;
+    grid-column-gap: 2%;
+    grid-template-areas:
+        "card1 card2 card4 card5"
+        "card1 card3 card4 card6";
+
+
 }
+
+.card-activity {
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 #c0c0c0;
+
+}
+
+.card-activity a img {
+    width: 100%;
+    height: 80%;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    object-fit: cover;
+}
+
+.cards-activity {
+    height: 30vh;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 #c0c0c0;
+
+}
+
+.cards-activity img {
+    width: 100%;
+    height: 80%;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    object-fit: cover;
+
+}
+.activity-description{
+    padding: 10px 15px;
+}
+.card1 {
+    grid-area: card1;
+}
+
+.card2 {
+    grid-area: card2
+}
+
+.card3 {
+    grid-area: card3
+}
+
+.card4 {
+    grid-area: card4
+}
+
+.card5 {
+    grid-area: card5
+}
+
+.card6 {
+    grid-area: card6
+}
+
 /* Footer */
 .footer {
     background-color: #ececec;
