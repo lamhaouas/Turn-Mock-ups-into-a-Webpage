@@ -1,6 +1,5 @@
 body {
     font-family: 'Raleway', sans-serif;
-
 }
 
 h1 {
@@ -8,15 +7,22 @@ h1 {
     font-weight: 500;
 }
 
+header {
+    grid-area: header;
+}
+
 header p {
     margin-top: 1px;
 }
+
 a {
     text-decoration: none;
+    color: black;
 }
+
 /* Navigation bar */
 nav {
-    grid-area: 1;
+    grid-area: nav;
 }
 
 nav img {
@@ -85,7 +91,7 @@ form input::placeholder {
 /* Filters */
 .filters {
     display: flex;
-    flex-flow: row;
+    flex-wrap: wrap;
 
 }
 
@@ -94,32 +100,44 @@ form input::placeholder {
     padding: 10px
 }
 
+.filter-buttons {
+    display: flex;
+    margin: 20px 0 0 20px;
+    gap: 15px;
+
+}
+
 .filter-button {
-    margin: 20px;
-    border-radius: 20px;
-    border: 2px solid #f2f2f2;
+    border: 2px solid #ddd;
+    border-radius: 40px;
+    outline: none;
     background-color: white;
-    font-weight: bold;
     height: 45px;
     position: relative;
-    width: 150px;
-    transition-property: width;
 
 }
 
 .filter-button i {
-    color: #0065fc;
-    background-color: #deebff;
+    display: flex;
+    flex-wrap: initial;
     padding: 15px;
-    border-radius: 50px;
+    border-radius: 50%;
+    background-color: #deebff;
+    color: #0065fc;
     position: absolute;
-    left: -10px;
-    top: -2px;
+    left: -8px;
+    top: -1px;
+}
+
+.filter-button span {
+    font-weight: bold;
+    padding: 0px 15px 0 35px;
+    font-size: larger;
+
 }
 
 .filter-button:hover {
     background-color: #1e90ff;
-    width: 180px;
 }
 
 .info {
@@ -145,13 +163,17 @@ form input::placeholder {
 /* Accommodations in marseille */
 
 .accommodations {
-    grid-area: 3;
+    grid-area: accommodations;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     background-color: #ececec;
     border-radius: 20px;
-    padding: 30px;
+    width: 80%;
+    height: fit-content;
+    padding: 15px;
+
+
 
 }
 
@@ -159,6 +181,7 @@ form input::placeholder {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    height: fit-content;
 
 }
 
@@ -169,9 +192,9 @@ form input::placeholder {
     background-color: white;
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 #c0c0c0;
-    padding: 20px;
-    width: 300px;
-    height: 250px;
+    padding: 10px;
+    width: 25%;
+    height: 200px;
     margin: 20px;
 }
 
@@ -183,16 +206,40 @@ form input::placeholder {
     object-fit: cover;
 }
 
+figcaption p {
+    margin: 5px 0;
+    padding: 0;
+
+}
+
 figcaption i {
     color: #0065fc;
 }
 
+.accommodation-card:hover {
+    box-shadow: 0 12px 16px 0 #1e90ff;
+}
+
 /* The side */
+.side-title {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.side-title i {
+    float: right;
+
+}
+
 .most-popular {
+    grid-area: mostpopular;
     display: flex;
     flex-direction: column;
     background-color: #ececec;
     width: 30%;
+    border-radius: 20px;
+    padding: 20px;
 }
 
 .most-cards {
@@ -206,17 +253,34 @@ figcaption i {
     box-shadow: 0 4px 8px 0 #c0c0c0;
     border-radius: 20px;
     background-color: white;
+    margin-right: 0px;
+    margin-left: 0px;
+    height: 140px;
 }
 
 .most-card img {
     width: 40%;
-    height: 100%;
     margin: 10px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
 
+.most-card:hover {
+    box-shadow: 0 12px 16px 0#1e90ff;
+}
+
+.sidebyside {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+
+}
+
 /* Activities in Marseille */
+.activities {
+    grid-area: activities;
+}
+
 .activities-cards {
     display: grid;
     grid-template-columns: repeat(4, 23%);
@@ -239,11 +303,16 @@ figcaption i {
 
 .card-activity a img {
     width: 100%;
-    height: 80%;
+    height: 88%;
     border-top-right-radius: 25px;
     border-top-left-radius: 25px;
     object-fit: cover;
 }
+
+.card-activity:hover {
+    box-shadow: 0 12px 16px 0 #1e90ff;
+}
+
 
 .cards-activity {
     height: 30vh;
@@ -253,6 +322,11 @@ figcaption i {
 
 }
 
+.cards-activity:hover {
+    box-shadow: 0 12px 16px 0#1e90ff;
+}
+
+
 .cards-activity img {
     width: 100%;
     height: 80%;
@@ -261,9 +335,12 @@ figcaption i {
     object-fit: cover;
 
 }
-.activity-description{
+
+.activity-description {
     padding: 10px 15px;
+
 }
+
 .card1 {
     grid-area: card1;
 }
@@ -290,6 +367,7 @@ figcaption i {
 
 /* Footer */
 .footer {
+    grid-area: footer;
     background-color: #ececec;
     padding: 15px;
     display: flex;
@@ -310,3 +388,4 @@ figcaption i {
     padding: 20px;
     margin-left: 150px;
 }
+
