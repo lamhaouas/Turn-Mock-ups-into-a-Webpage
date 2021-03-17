@@ -16,8 +16,8 @@ header p {
 }
 
 a {
+
     text-decoration: none;
-    color: black;
 }
 
 /* Navigation bar */
@@ -26,8 +26,7 @@ nav {
 }
 
 nav img {
-    width: 150px;
-    height: 70px;
+    height: 60px;
     padding: 15px 0px;
 }
 
@@ -35,16 +34,16 @@ nav ul {
     float: right;
     display: inline-flex;
     margin-top: 30px;
+
 }
 
 nav ul li {
     list-style-type: none;
     padding: 10px 35px;
-    font-weight: 500;
-
+    font-weight: bold
 }
 
-li a {
+.signup {
     color: #1e90ff;
 }
 
@@ -389,3 +388,122 @@ figcaption i {
     margin-left: 150px;
 }
 
+@media screen and (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        height: 150px;
+
+    }
+
+    nav img {
+        margin-right: 100px;
+        padding-right: 125px;
+
+    }
+
+    nav ul {
+        text-decoration: none;
+        width: 100%;
+        padding-left: 10px 0;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .signup {
+        position: absolute;
+        top: 30px;
+        right: 35px;
+        padding: 20px;
+
+    }
+
+    .filters {
+        display: flex;
+
+    }
+
+    .filter-button {
+        display: flex;
+        flex-wrap: wrap;
+        min-width: 30%;
+    }
+
+    .accommodation-button {
+        position: relative;
+        width: 50%;
+        border-bottom: 2px solid #1e90ff;
+        text-align: center;
+
+    }
+
+    .activities-button {
+        position: relative;
+        width: 50%;
+        text-align: center;
+
+    }
+
+    .sidebyside {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .accommodations {
+        width: 90%;
+    }
+
+    .accommodation-figs {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .accommodation-card {
+        width: 90%;
+    }
+
+    .most-popular {
+        width: 90%;
+    }
+
+    .activities {
+        width: 95%;
+    }
+
+    .activities-cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .most-card {
+        width: 90%;
+    }
+
+    .footer {
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ft-1 {
+        margin: 0;
+    }
+
+    .ft-2 {
+        margin: 0;
+    }
+
+    .ft-3 {
+        margin: 0;
+    }
+
+    .sidebyside {
+        display: flex;
+        flex-flow: wrap-reverse;
+    }
+
+
+}
