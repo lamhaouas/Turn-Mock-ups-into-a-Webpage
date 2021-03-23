@@ -1,6 +1,6 @@
 body {
     font-family: 'Raleway', sans-serif;
-
+    margin-top: 0px;
 }
 
 h1 {
@@ -34,20 +34,31 @@ nav img {
 nav ul {
     float: right;
     display: inline-flex;
-    margin: 0%;
+    margin-top: 0;
+
 }
 
-nav a {
-    color: #1e90ff;
-}
 
 nav ul li {
     list-style-type: none;
     padding: 0 20px;
-    font-weight: bold
+    font-weight: 500;
+}
+
+ul a:hover {
+    color: #1e90ff;
+}
+
+ul a {
+    color: gray;
 }
 
 .accommodation-button {
+
+    padding-top: 30px;
+}
+
+.accommodation-button:hover {
     border-top: 2px;
     border-top-color: #1e90ff;
     border-top-style: solid;
@@ -58,11 +69,23 @@ nav ul li {
 
 .activities-button {
     padding-top: 30px;
+    color: #1e90ff;
+}
+
+.activities-button:hover {
+    border-top: 2px;
+    border-top-color: #1e90ff;
+    border-top-style: solid;
+    padding-top: 30px;
 }
 
 .signup {
-    color: #1e90ff;
+
     padding-top: 30px;
+}
+
+.signup a {
+    color: #1e90ff;
 }
 
 /* search bar  */
@@ -303,6 +326,7 @@ figcaption i {
 /* Activities in Marseille */
 .activities {
     grid-area: activities;
+   padding-top: 40px;
 }
 
 .activities-cards {
@@ -461,17 +485,38 @@ figcaption i {
     .accommodation-button {
         position: relative;
         width: 50%;
-        border-bottom: 2px solid #1e90ff;
         text-align: center;
-        border-top: none;
+
 
     }
 
+    .accommodation-button:hover {
+        border-bottom: 2px;
+        border-bottom-color: #1e90ff;
+        border-bottom-style: solid;
+        padding-top: 30px;
+        border-top: none;
+    }
+
     .activities-button {
+
         position: relative;
         width: 50%;
         text-align: center;
 
+    }
+
+    .activities-button:hover {
+        border-bottom: 2px;
+        border-bottom-color: #1e90ff;
+        border-bottom-style: solid;
+        padding-top: 30px;
+        border-top: none;
+    }
+
+    .filter-button span {
+        margin: 10px;
+        justify-content: center;
     }
 
     .sidebyside {
@@ -546,9 +591,21 @@ figcaption i {
 
 }
 
-@media screen and (max-width:768px){
-    .accommodation-card{
-        width: 100%;
+@media screen and (min-width: 768px)and (max-width: 1152px) {
+    .accommodation-card {
+        width: 50%;
+    }
 
+    .most-popular {
+        width: 50%;
+
+    }
+
+    .accommodations {
+        width: 50%;
+    }
+
+    .accommodation-card {
+        width: 100%;
     }
 }
