@@ -27,24 +27,38 @@ nav {
 
 nav img {
     height: 60px;
-    padding: 15px 0px;
 }
 
 nav ul {
     float: right;
     display: inline-flex;
-    margin-top: 30px;
+    margin: 0%;
+
 
 }
 
 nav ul li {
     list-style-type: none;
-    padding: 10px 35px;
+    padding: 0 20px;
     font-weight: bold
+}
+
+.accommodation-button {
+    border-top: 2px;
+    border-top-color: #1e90ff;
+    border-top-style: solid;
+    padding-top: 20px;
+
+
+}
+
+.activities-button {
+    padding-top: 25px;
 }
 
 .signup {
     color: #1e90ff;
+    padding-top: 25px;
 }
 
 /* search bar  */
@@ -393,6 +407,8 @@ figcaption i {
     margin-left: 150px;
 }
 
+/* Media queries  */
+
 @media screen and (max-width: 768px) {
     nav {
         display: flex;
@@ -441,6 +457,7 @@ figcaption i {
         width: 50%;
         border-bottom: 2px solid #1e90ff;
         text-align: center;
+        border-top: none;
 
     }
 
