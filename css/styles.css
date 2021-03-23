@@ -1,5 +1,6 @@
 body {
     font-family: 'Raleway', sans-serif;
+
 }
 
 h1 {
@@ -18,6 +19,7 @@ header p {
 a {
 
     text-decoration: none;
+
 }
 
 /* Navigation bar */
@@ -33,8 +35,10 @@ nav ul {
     float: right;
     display: inline-flex;
     margin: 0%;
+}
 
-
+nav a {
+    color: #1e90ff;
 }
 
 nav ul li {
@@ -47,18 +51,18 @@ nav ul li {
     border-top: 2px;
     border-top-color: #1e90ff;
     border-top-style: solid;
-    padding-top: 20px;
+    padding-top: 30px;
 
 
 }
 
 .activities-button {
-    padding-top: 25px;
+    padding-top: 30px;
 }
 
 .signup {
     color: #1e90ff;
-    padding-top: 25px;
+    padding-top: 30px;
 }
 
 /* search bar  */
@@ -194,8 +198,10 @@ form input::placeholder {
 .accommodation-figs {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    height: fit-content;
+    /* height: fit-content; */
 
 }
 
@@ -500,6 +506,16 @@ figcaption i {
         flex-direction: column;
     }
 
+    .card-activity {
+        width: 100%;
+        height: 40vh;
+    }
+
+    .cards-activity {
+        width: 100%;
+        height: 40vh;
+    }
+
     .most-card {
         width: 90%;
     }
@@ -528,4 +544,11 @@ figcaption i {
     }
 
 
+}
+
+@media screen and (max-width:768px){
+    .accommodation-card{
+        width: 100%;
+
+    }
 }
