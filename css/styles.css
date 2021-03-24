@@ -326,7 +326,7 @@ figcaption i {
 /* Activities in Marseille */
 .activities {
     grid-area: activities;
-   padding-top: 40px;
+    padding-top: 40px;
 }
 
 .activities-cards {
@@ -457,7 +457,7 @@ figcaption i {
     nav ul {
         text-decoration: none;
         width: 100%;
-        padding-left: 10px ;
+        padding-left: 10px;
         margin: 0;
         padding: 0;
 
@@ -587,8 +587,6 @@ figcaption i {
         display: flex;
         flex-flow: wrap-reverse;
     }
-
-
 }
 
 @media screen and (min-width: 768px)and (max-width: 1152px) {
@@ -598,7 +596,6 @@ figcaption i {
 
     .most-popular {
         width: 50%;
-
     }
 
     .accommodations {
