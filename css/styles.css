@@ -422,15 +422,14 @@ figcaption a {
 }
 
 /* Footer */
-.footer {
+footer {
     grid-area: footer;
     background-color: #ececec;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     margin-top: 70px;
     justify-content: space-between;
     padding: 20px 25% 30px 15px;
-
 }
 
 
@@ -563,7 +562,7 @@ figcaption a {
         width: 90%;
     }
 
-    .footer {
+    footer {
         margin: 0px;
         display: flex;
         flex-direction: column;
@@ -595,7 +594,7 @@ figcaption a {
         width: 100%;
     }
 
-    .footer {
+    footer {
         display: flex;
         flex-wrap: wrap;
     }
