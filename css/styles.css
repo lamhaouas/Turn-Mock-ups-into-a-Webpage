@@ -16,11 +16,6 @@ header p {
     margin-top: 1px;
 }
 
-a {
-
-    text-decoration: none;
-
-}
 
 /* Navigation bar */
 nav {
@@ -51,6 +46,7 @@ ul a:hover {
 
 ul a {
     color: gray;
+    text-decoration: none;
 }
 
 .accommodation-button {
@@ -263,9 +259,16 @@ figcaption i {
     color: #0065fc;
 }
 
+figcaption a {
+    color: black;
+    text-decoration: none;
+
+}
+
 .accommodation-card:hover {
     box-shadow: 0 12px 16px 0 #1e90ff;
 }
+
 
 /* The side */
 .side-title {
@@ -357,6 +360,11 @@ figcaption i {
     object-fit: cover;
 }
 
+.activities-cards a {
+    color: black;
+    text-decoration: none;
+}
+
 .card-activity:hover {
     box-shadow: 0 12px 16px 0 #1e90ff;
 }
@@ -417,25 +425,15 @@ figcaption i {
 .footer {
     grid-area: footer;
     background-color: #ececec;
-    padding: 15px;
     display: flex;
-    margin-top: 35px;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    justify-content: space-between;
+    padding: 20px 25% 30px 15px;
+
 }
 
-.ft-1 {
-    padding: 20px;
-    margin-right: 150px;
-}
 
-.ft-2 {
-    padding: 20px;
-    margin: 0 100px;
-}
-
-.ft-3 {
-    padding: 20px;
-    margin-left: 150px;
-}
 
 /* Media queries  */
 
@@ -571,17 +569,7 @@ figcaption i {
         flex-direction: column;
     }
 
-    .ft-1 {
-        margin: 0;
-    }
 
-    .ft-2 {
-        margin: 0;
-    }
-
-    .ft-3 {
-        margin: 0;
-    }
 
     .sidebyside {
         display: flex;
@@ -596,6 +584,7 @@ figcaption i {
 
     .most-popular {
         width: 50%;
+        height: fit-content;
     }
 
     .accommodations {
@@ -605,4 +594,11 @@ figcaption i {
     .accommodation-card {
         width: 100%;
     }
+
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
 }
