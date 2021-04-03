@@ -1,6 +1,6 @@
 body {
     font-family: 'Raleway', sans-serif;
-    margin-top: 0px;
+    margin: 0px 30px;
 }
 
 h1 {
@@ -232,7 +232,7 @@ form input::placeholder {
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 #c0c0c0;
     padding: 10px;
-    width: 25%;
+    width: 27%;
     height: 200px;
     margin: 20px;
 }
