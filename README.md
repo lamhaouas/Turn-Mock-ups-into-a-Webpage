@@ -2,9 +2,13 @@
 
 # Turn Mock-ups Into a Web Page
 Turn mock up into a web page is my first project,
-*I used HTML and CSS only, no framework or a pre-compiler for this project (like SASS for instance).
-*The layout is responsive using media queries, CSS flexbox and CSS grid.
-*The code was tracked with version control where I used Gitbash and practice the command lines.
+
+* I used HTML and CSS only, no framework or a pre-compiler for this project (like SASS for instance).
+
+* The layout is responsive using media queries, CSS flexbox and CSS grid.
+
+* The code was tracked with version control where I used Gitbash and practice the command lines.
+
 
 ## The Mock-up for desktop
 ![desktop](/images/Desktop.png)
